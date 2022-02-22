@@ -1,0 +1,7 @@
+Ten pages,theme are similar, to display main catalogue
+External - all pages will reflected to all pages
+
+Ten pages, each web pages diff themes
+Internal - Every page has diff style, cant use external because all the page will be similar to the source code. each page diff themes. if use external, link up to css file. 10 diff files
+
+Inline - why discouraged? There is limitation, have to add inline styling to each element manually. Because it makes content and presentation cluttered, messy. Need seperate content.
