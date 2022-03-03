@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">  
+     .parent-element {
+        /*position: relative;*/
+        height: 150px;
+        padding:   10px;
+        background-color: #81adc8; /*x colour*/
+    }
+    .main-element {
+        /*position: absolute;*/
+        position: fixed;         /*fixed does not effect scrolling stays remain on that location regardless if u scroll down, follows the page (html), if absolute stays on the same position that has been set (affected by scrolling changes location but still same?), follows the parent*/
+        left: 0;
+        /*static follows the original no effect taken*/
+        /*absolute follows the exact position based looks at immediate parent, move within parent, if not move within the webpage.*/
+    /*    when parrent element does not have postion element, follows main element, parent element follows body, body follows html
+
+        if does have, main element follows based from the parent element. no property to parent? goes next to another parent, no? next parent element. mpvement based on the parent.
+
+        /* if parent does not have position element, able to move freely*/*/
+        right: 0; 
+        bottom: 0; 
+        /*top left bottom and right is the positioning*/
+        background-color: yellow;
+        padding: 10px;
+    }
+
+    .sibling-element {
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+
+  
+
+
+    </style>
+</head>
+<body>
+ <div class="parent-element">
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+</div>
+</body>
+</html>
