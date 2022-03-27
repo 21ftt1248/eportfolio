@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7 ePortfolio part 1</title>
+	<style type="text/css">
+
+
+
+    /*ELEMENT SELECTOR*/
+	    h3{text-align: center;}
+
+     /*ID SELECTOR*/
+		 #container{
+		 	display:;
+			height: 90vh;
+			width: 600px;
+			margin: auto;
+			grid-template-columns: 1fr;
+			justify-content: center;
+			}
+	    #container>div{
+	    	display: flex;
+	  	    border: 1px solid;
+	  	    border: hidden;
+	    	padding: 8px;
+	    	justify-content: center;}
+
+
+</style>
+</head>
+<body>
+
+
+<h3>Registration for Covid-19 Volunteer -&reg; C19-Team</h3>
+
+
+<div id="container">
+<div>Fullname</div> <div><input type="text" name="Fullname" maxlength="30" pattern="[A-Z]{30}"></div>
+
+<div>Email</div> <div><input type="Email" name="Email"></div>
+
+<div>Date you can start</div><div> <input type="Date" name="Date you can start"></div>
+
+<div>Morning shift preference</div> <div><input type="Time" name="MorningShift"></div>
+
+<div>Night shift preference</div> <div><input type="Time" name="NightShift"></div>
+
+<div>How many hours you can work? In a multiple of 3</div> 
+            
+            <div><input type="number" name="hours*3" value="3" step="3" min="3" max="9"></div>
+
+<div>Distance you willing to commute to volunteer center?</div> 
+<div>1
+	 	
+	
+	<input type="range" name="Distance" value="3" min="1" max="15">
+	
+
+15</div>
+        
+
+<div>Your currency preference for payment?</div> 
+        <div > 		
+	        <label><input type="radio" name="Pound" id="pound">&pound;</label>
+	 		<label><input type="radio" name="Yen" id="Yen">&yen;</label>
+	 		<label><input type="radio" name="Euro" id="euro">&euro;</label>
+	 	</div>
+
+
+        <div>
+	 		<textarea name="HomeAddr" rows="6" cols="40" placeholder="Type your home address"></textarea>
+        </div>
+
+
+	    <div>
+	 		<del>You will be given daily meals</del>
+        </div>
+
+
+        <div>	
+	 	<span>
+	 		<input type="checkbox" name="checkTermsCon" disabled="1" checked="1">
+	 	</span>
+	 		<label>I agree to all terms and condition</label>
+	    </div>
+
+
+	    <div>
+	    	<label>Prove you are not a robot: 10 &lt;  20?</label>
+	    	<span>
+	 		<input type="checkbox" name="RobotCheck" id="RobotCheck">
+	 		</span>
+	    </div>
+
+	    <div>
+	 	<input class="sub" type="submit" name="Volunteer" value="Volunteer now!" for="volunteer">
+	    </div>
+
+
+        <div>
+ 	 		<input class="res" type="Reset" name="StartOver" value="Start Over" for="StartOver">
+        </div>
+
+
+
+        <div>
+			<label>For more information visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx" target="_blank">website</a></label>
+        </div> 
+</div>
+<!-- </form> -->
+
+
+</body>
+</html>
