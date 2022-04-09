@@ -1,0 +1,176 @@
+<html !DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <style type="text/css">
+
+    .main{display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 150px 150px 150px 150px;
+      grid-gap: 2em;
+      text-align: center;
+      grid-template-areas: 
+      'mason mark mark mark'
+      'albert seus seus seus'
+      'elon chinese chinese chinese'
+      'jim martin martin martin'
+      ;}
+
+    .submain{
+      display: grid;
+      background: skyblue;
+      text-align : center; 
+      font-size: 1em; 
+      grid-template-areas: 
+      'quote'
+      'quote'
+      'quote'
+      'quote'
+      'qoute'
+      'author'
+    }
+
+    .submain>div:nth-child(1){
+      background: lightseagreen;
+      text-align: center; 
+      grid-area: author;}
+
+    .submain>div:nth-child(2){
+      background: skyblue;
+      grid-row: 150px; 
+      text-align: center; 
+      margin: auto;
+      grid-area: quote; 
+    }
+
+    .main>div:nth-child(1){grid-area: mark;}
+    .main>div:nth-child(2){grid-area: mason;}
+    .main>div:nth-child(3){grid-area: albert;}
+    .main>div:nth-child(4){grid-area: elon;}
+    .main>div:nth-child(5){grid-area: jim;}
+    .main>div:nth-child(6){grid-area: seus;}
+    .main>div:nth-child(7){grid-area: chinese;}
+    .main>div:nth-child(8){grid-area: martin;}
+
+    
+    /*TABLET VIEW*/
+    @media screen and (max-width: 800px)
+    {
+      .main{
+        display: grid;
+        font-size: 1.25em;  
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'mark mark'
+        'mason mason'
+        'albert elon'
+        'jim seus'
+        'chinese chinese'
+        'martin martin'
+
+      }
+      .submain{
+        grid-template-areas: 
+        'author'
+        'quote'}
+    }
+
+    /*MOBILE VIEW*/
+    @media screen and (max-width: 400px)
+    {.main{
+      font-size: 1.5em;
+      grid-template-columns: 100%;
+      grid-gap: 0px;
+      grid-template-areas: 
+      'mark'
+      'mason'
+      'albert'
+      'elon'
+      'jim'
+      'seus'
+      }
+      .main>div:nth-child(7){display: none;}
+      .main>div:nth-child(8){display: none;}}
+
+
+
+
+
+
+
+
+/*
+    THIS TASK REQUIRE YOU TO USE CSS GRID AND THEIR RELATED PROPERTIES
+  */
+
+    /*ORGANIZE YOUR CSS IN THE FOLLOWING ORDER, IF APPLICABLE
+
+    1. ELEMENT SELECTOR
+    2. ID SELECTOR
+    3. CLASS SELECTOR
+    4. DESCENDENT SELECTOR
+    5. CHILD SELECTOR
+    6. SIBLING SELECTOR
+    7. ATTRIBUTE SELECTOR
+    8. PSEUDO CLASS SELECTOR
+
+    FAILURE TO COMPLY WILL RESULTS IN MARK DEDUCTION*/
+  </style>
+</head>
+<body>
+  <!-- INSTRUCTIONS
+    YOU ARE NOT ALLOWED TO CHANGE ANY PART OF THE HTLM CODES (SUCH AS ADDING ID attributes or additional values to the classes atributes.) 
+  
+    YOUR TASK IS TO WRITE THE CSS CODE TO ACHIEVE THE REQUIRED OUTPUT-->
+<div class="main">
+  
+<div class="submain spotlight">
+  <div>Mark Twain</div>
+  <div>The man who does not read books has no advantage over the one who cannot read them.</div>
+</div>
+<div class="submain col">
+  <div>Mason Cooley</div>
+  <div>Procrastination makes easy things hard and hard things harder.</div>
+</div>
+<div class="submain col">
+  <div>Albert Einstein</div>
+  <div>
+A person who never made a mistake never tried anything new.</div>
+</div>
+<div class="submain col">
+  <div>Elon Musk</div>
+  <div>
+I think it’s possible to ordinary people to choose to be extraordinary.</div>
+</div>
+
+<div class="submain col">
+  <div>Jim Ryun</div>
+  <div>
+Motivation is what gets you started. Habit is what keeps you going.</div>
+</div>
+
+<div class="submain spotlight">
+  <div>Dr. Seuss</div>
+  <div>
+The more that you read, the more things you will know, the more that you learn, the more places you’ll go.</div>
+</div>
+
+<div class="submain spotlight">
+  <div>Chinese Proverb</div>
+  <div>
+He who asks a question is a fool for five minutes; he who does not ask a question remains a fool forever.</div>
+</div>
+
+<div class="submain spotlight">
+  <div>Martin Luther king</div>
+  <div>
+If you can’t fly, then run. If you can’t run, then walk. If you can’t walk, then crawl. But by all means, keep moving</div>
+</div>
+
+
+</div>
+</body>
+</html>
