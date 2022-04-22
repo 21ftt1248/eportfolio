@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+     <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+
+    <title>Brunei December Festival | GROUP 5 | DISS07</title>
+
+    <style>
+
+      :root {
+  --variable-name: value;
+}
+
+      selector {
+  property: var(--variable-name);
+}
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #393937;
+  --primary-color: white;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: ;
+}
+    </style>
+
+
+    <style type="text/css">
+      
+    nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: #393937;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+  nav h1 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 100rem;
+  margin: auto;
+  margin-right: 5%;
+}
+
+.hero img {
+  height: 40rem;
+  width: 65.5rem;
+}
+
+.bio {
+  width: 50rem;
+  padding: 0.625rem;
+  border-radius: 7px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  background-color: #F0AA13;
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+/*about*/
+.more-about {
+  background-color:#F0AA13;
+  padding: 1rem 6rem;
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+/*supporters*/
+
+.supporters {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+  background-color: #F0AA13;
+}
+
+.supporters-header {
+  margin-bottom: 1rem;
+}
+
+.supporters-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+/*contacts*/
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  background-color: #F0AA13;
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color:#393937;
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+  background-color: #393937;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+  background-color: #393937;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+  background-color: #393937;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+/*commitees*/
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size: 25px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+
+
+
+/*instagram and more about us*/
+
+.more {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.info {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+/*footer*/
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+/*go up*/
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+#button{
+  right: 1%;
+  bottom: 50%;;
+}
+
+.copy{
+  color: white;
+}
+
+/*tablets and mobile phones*/
+
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+   nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+   nav ul li {
+    margin: 8px;
+  }
+
+   .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero img {
+        height: 37.5rem;
+        width: 30rem;
+    }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+  
+   .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .more-about h2 {
+    text-align: center;
+  }
+
+  .more-about p {
+    text-align: justify;
+  }
+
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+   .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
+} 
+    </style>
+  </head>
+  <body>
+
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+     <nav>
+      <h1>BRUNEI DECEMBER FESTIVAL</h1>
+      <ul class="navigation">       
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="calender.html" class="nav-link">Events</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="#supporters" class="nav-link">Supporters</a></li>
+        <li><a href="#contact" class="nav-link">Contacts</a></li>
+        <li><a href="Feedback.html" class="nav-link">Feedback</a></li>
+        <li><a href="placeofinterest.html" class="nav-link">POI</a></li>
+
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>1
+      </button>
+</nav>
+       <br>
+       <br>
+
+      <section class="hero" id="about">
+      <img
+        src="bdf-logo.jpg"
+        alt="bdf-logo"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About</h2>
+        <p class="bio-text">
+Brunei Darussalam boasts a colourful exhibition of fascinating customs and rich nature, with a contemplative respect for religion as well as reverence for its ancient sovereignty, and we’d like to invite you to experience it all, right in the heart of our home!
+
+Since gaining independence from the British in 1984, Brunei has continued to strive forward, becoming a member of a number of regional and international organisations, such as the Association of Southeast Asian Nations (ASEAN), the Organisation of Islamic Conference, the Commonwealth and the United Nations. Also, thanks to the extensive oilfields which were first discovered in 1929, the people enjoy plenty of benefits, such as free healthcare, a well-established state education system and even a housing scheme dedicated to providing citizens with affordable homes. There are plethoras of hotels in the capital, as well as numerous options for shopping and leisure. Sports activities are also a common past time in Brunei, so there’s little difficulty in finding one to participate in. Despite the urban sophistication, there’s really nothing like walking through an air-conditioned mall looking for a place to eat lunch, and then trekking through the depths of the rainforest less than a couple of hours later!
+        </p>
+      </div>
+
+    </section>
+    <br>
+    <br>
+        <section class="more-about">
+      <h2>More About Us</h2>
+      <p>
+
+      According to early history, Brunei was discovered by a group of fourteen brothers travelling in search of a new place to live, which would be the beginnings of today’s Brunei...
+      <br>
+      <br>
+
+      Although widely recognised for our ancient rainforests and intriguing wildlife, Brunei has much more to offer than just flora and fauna. Discover the thrills of rapid rivers or the wonders in the ocean. Feast on traditional street food or indulge in fine-dining experiences. Uncover the sights and sounds in every district at your own pace and feel the warmth in our welcome....
+      
+
+      <br>
+      <br>
+      <b><center>For more info, you click the <u>info</u> button on the rightside of the webpage!</center></b>
+      </p>
+         </section>
+
+
+        <section class="supporters" id="supporters">
+      <h2 class="supporters-header">Our Supporters</h2>
+
+      <div class="supporters-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="rtb.jpg"
+            alt="RTB"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="suci.jpg"
+            alt="Suci"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="progressif.jpg"
+            alt="Progressif"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="btb.jpg"
+            alt="Brunei Tourism Board"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="rba.jpg"
+            alt="RBA"
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="abode.jpg"
+            alt="Brunei Abode"
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+      <br>
+      <br>
+      <section class="contact" id="contact">
+      <h2>You can contact us!</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+           <a href="mailto:diss07.group5@gmail.com" type="submit" value="Submit"  id="submit-btn" class="submit-btn">submit</a>
+          
+            
+          </form>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h2>ORGANIZING COMMITEES</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="asnawi.jpg" alt="Asnawi" style="width:100%">
+      <div class="container">
+        <h2>Asnawi Iman</h2>
+        <p class="title">Chairman</p>
+       
+        <p>"I'm just happy to be here."</p>
+       
+        <p>21ftt1248@student.pb.edu.bn</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="izzat.jpg" alt="Izzat" style="width:100%">
+      <div class="container">
+        <h2>Izzat Nizamuddin</h2>
+       
+        <p class="title">Secretary</p>
+        <p>"ummm lorem"</p>
+        
+        <p>21ftt1238@student.pb.edu.bn</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="hafiy.jpg" alt="Hafiy" style="width:100%">
+      <div class="container">
+        <h2>Hafiy Hafizan</h2>
+        <p class="title">Treasurer</p>
+       
+        <p>"Mmmmm just random. Don't find me."</p>
+       
+        <p>21ftt1225@student.pb.edu.bn</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <section>
+
+         <div class="more">
+      <a href="https://www.instagram.com/bruneidecemberfest/?hl=en" target="_blank"
+        ><img
+          src="icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="info"
+
+      /></a> 
+
+          <a href="https://www.bruneitourism.com/about-brunei" target="_blank"
+        ><img
+          src="icons8-info.gif"
+          alt="more"
+          loading="lazy"
+          class="info"
+
+      /></a> 
+        
+    </div>
+             
+
+        
+    </section>
+
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        <br>
+        <p class="copy">You can contact us at diss07.group5@gmail.com</p>
+      </p>
+</footer>
+
+  <i class="scroll-up" id="scroll-up"
+      ><img
+        src="icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
+
+    <script type="text/javascript">
+      // scroll to top functionality
+const scrollUp = document.querySelector("#scroll-up");
+
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+    </script>
+
+    <!-- mb and tab -->
+    <script type="text/javascript">
+      // Nav hamburgerburger selections
+
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+
+burger.addEventListener("click", () => {
+  ul.classList.toggle("show");
+});
+
+// Close hamburger menu when a link is clicked
+
+// Select nav links
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    ul.classList.remove("show");
+  })
+);
+    </script>
+
+
+</body> 
+</div>
+</section>
+</body>
+</html>
